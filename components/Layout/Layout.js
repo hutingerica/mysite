@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/Image'
+import Image from 'next/image'
 import Link from 'next/link'
 import styled from 'styled-components'
 
-const name = "Erica Huang"
 export const meta = {
   siteTitle: "Erica Huang",
   description: "Erica's personal website",
