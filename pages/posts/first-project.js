@@ -10,9 +10,6 @@ export default function FirstProject (){
     </Head>
     <h2>First Project</h2>
     <p>First ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst ProjectFirst Project</p>
-    <Link href="/">
-      <a>Back to home</a>
-    </Link>
   </Layout>
   )
 }

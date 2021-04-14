@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Layout from '../components/Layout'
+
 
 export default function Home() {
   return (
+    <Layout home>
     <div className="container">
       <Head>
         <title>Erica Huang</title>
@@ -59,7 +62,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          <img src="/profile.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
@@ -209,5 +212,6 @@ export default function Home() {
         }
       `}</style>
     </div>
+    </Layout>
   )
 }
