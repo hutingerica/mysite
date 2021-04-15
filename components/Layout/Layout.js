@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styled from 'styled-components'
 
-export const meta = {
+const meta = {
   siteTitle: "Erica Huang",
   description: "Erica's personal website",
   image: "/profile.svg",
