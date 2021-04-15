@@ -66,17 +66,20 @@ const LayoutWrapper = styled.div`
   margin: 3rem auto 6rem;
 `
 const HomeHeader = styled.div`
+  padding-bottom: 5rem;
+  margin-bottom: 1rem;
+  
   h1 {
     font-size: 2.5rem;
-    line-height: 1.2;
+    line-height: 1.3;
     letter-spacing: -0.05rem;
-    margin: 0.5rem 0;
+    margin: 0 0 0.6rem 0;
   }
   h3 {
     font-size: 1.5rem;
-    line-height:1.2;
-    margin: 0.5rem 0;
-    font-variation-settings: 'wght' 450;
+    line-height:1.3;
+    margin: 0;
+    font-variation-settings: 'wght' 600;
   }
 `
 
@@ -90,5 +93,17 @@ const PageHeader = styled.div`
     margin-bottom: 0;
     color: hsl(222deg 22% 22% / 100%);
 
+  }
+`
+const LinkWrapper = styled.div`
+  display: flex;
+
+  p{
+    color: hsl(0deg 0% 22% / 100%);
+    font-size: 1.2rem;
+    line-height:1.3;
+    margin: 0.3rem 0 0;
+    font-variation-settings: 'wght' 450;
+    margin-right: .5rem;
   }
 `

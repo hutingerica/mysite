@@ -118,7 +118,7 @@ h5 {
 }
 
 a {
-  color: hsl(205deg 82% 56% / 100%);
+  color: hsl(47deg 94% 43% / 100%);
   text-decoration: none;
 }
 
