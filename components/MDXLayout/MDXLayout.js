@@ -32,7 +32,7 @@ const Read = styled.div`
   align-items: flex-end;
  `
  const SummaryTag = styled.h6`
-  background-color: hsl(145deg 84% 75% / 70%);
+  background-color: hsl(145deg 64% 50% / 50%);
   border-radius: 6px;
   padding: .25rem .5rem .5rem;
   max-width: max-content;
@@ -42,11 +42,11 @@ const Read = styled.div`
   font-variation-settings: 'wght' 700;
 
  `
- const Summary = styled.div`
+ const Summary = styled.section`
   width: 100%;
-  background-color: hsl(145deg 84% 95% / 100%);
-  border: 1px dashed hsl(145deg 84% 75% / 70%);
+  border: 1px dashed hsl(145deg 64% 70% / 50%);
   padding: 1rem;
+  margin: 1rem;
   align-self: center;
   margin-top:0;
   border-radius: 6px;

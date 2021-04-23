@@ -39,11 +39,13 @@ export default function Home({posts}) {
       </main>
 
       <Footer>
-          Made with 
+          <p>© 2020-present Erica Huang. All Rights Reserved.</p>
+          <p>Made by myself with
             <a target="_blank" href="https://nextjs.org">Next.js</a>
             <a target="_blank" href="https://mdxjs.com">MDX</a>
             <a target="_blank" href="https://www.styled-components.com">Styled-Component</a>
             <a target="_blank" href="https://vercel.com">Vercel</a>
+          </p>
       </Footer>
     </Layout>
 )}
@@ -62,18 +64,17 @@ const ItemTag = styled.small`
     letter-spacing: 0rem;
     padding: 0 .25rem;
     margin-left: 1rem;
-    color: hsl(0deg 0% 60% / 100%);
-    background-color: hsl(0deg 0% 70% / 10%);
+    color: hsl(0deg 0% 50% / 100%);
+    background-color: hsl(0deg 0% 80% / 20%);
     border-radius: 4px;
     font-variation-settings: 'wght' 500;
 `
 const ItemTitle = styled.h4`
     margin: 0;
-    font-variation-settings: 'wght' 500;
+    font-variation-settings: 'wght' 600;
 `
 
 const ItemLink = styled.a`
-  color: hsl(0deg 0% 22% / 100%);
   cursor: pointer;
   margin-left: -1rem;
   padding: .5rem 1rem;
@@ -84,14 +85,9 @@ const ItemLink = styled.a`
   &:hover {
     border: none;
     text-decoration: none;
-    color: hsl(0deg 0% 22% / 60%);
 
     ${ItemTag} {
     background-color: hsl(145deg 64% 70% / 100%);
-    color: hsl(145deg 64% 100% / 100%);
-    }
-    ${ItemTitle} {
-      color: hsl(145deg 64% 70% / 100%);
     }
   }
 `
@@ -105,11 +101,18 @@ const ItemWrapper = styled.div`
   margin-bottom: .5rem;
 `
 const Footer = styled.footer`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   letter-spacing: 0rem;
   color: hsl(0deg 0% 0% / 100%);
 
+  p{
+    margin:0;
+  }
+
   a {
+    color: hsl(0deg 0% 22% / 100%);
     margin-left: .5rem;
     font-variation-settings: 'wght' 400;
   }

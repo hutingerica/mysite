@@ -1,4 +1,4 @@
-import {createGlobalStyle, creatGlobalStyles} from 'styled-components'
+import {createGlobalStyle} from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 /*CSS Reset*/
@@ -74,6 +74,20 @@ table {
   font-named-instance: 'Italic';
 }
 
+//Themeing variables
+:root {
+  --bg: hsl(0deg 0% 98% / 100%);
+  --fg: hsl(0deg 0% 22% / 100%);
+  --ag: hsl(0deg 0% 22% / 100%);
+  --sbg: hsl(145deg 64% 96% / 100%);
+}
+  [data-theme="dark"] {
+    --fg: hsl(0deg 15% 90% / 100%);
+    --bg: hsl(0deg 0% 22% / 100%);
+    --ag: hsl(0deg 15% 90% / 80%);
+    --sbg: hsl(145deg 64% 5% / 100%);
+  }
+
 body {
   font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
@@ -84,8 +98,13 @@ body {
   font-variation-settings: 'wght' 400;
   font-variant: common-ligatures contextual;
   line-height: 1.75;
-  background-color: hsl(0deg 0% 99% / 100%);
-  color: hsl(0deg 0% 22% / 100%);
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+section {
+  color: var(--fg);
+  background-color: var(--sbg);
 }
 
 p {
@@ -125,7 +144,7 @@ small {
 }
 
 a {
-  color: hsl(0deg 0% 50% / 70%);
+  color: var(--ag);
   text-decoration: none;
   font-variation-settings: 'wght' 800;
   letter-spacing:0.05rem;
@@ -134,8 +153,8 @@ a {
 }
 
 a:hover {
-  color: hsl(145deg 64% 70% / 100%);
   border-bottom: 1px dashed hsl(145deg 64% 70% / 100%);
+  color: hsl(145deg 64% 70% / 100%);
 }
 
 img {
