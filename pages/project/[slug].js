@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import MDXLayout from '../../components/MDXLayout'
 import Layout from '../../components/Layout'
 import hydrate from 'next-mdx-remote/hydrate'
 import { getFiles, getFileBySlug } from '../../lib/mdx'
@@ -11,12 +12,13 @@ export default function Blog({ mdxSource, frontMatter }) {
 
   return (
     <Layout>
-      <Head>
-        <title>{frontMatter.title}</title>  
-      </Head>
-      <h1>{frontMatter.title}</h1>
-      {frontMatter.readingTime.text}
-      {content}
+      <MDXLayout frontMatter={frontMatter}>
+        <Head>
+          <title>{frontMatter.title}</title>
+          <link rel="icon" href="favicon.ico" />
+        </Head>
+        {content}
+      </MDXLayout>
     </Layout>)
 }
 

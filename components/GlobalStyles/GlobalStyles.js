@@ -28,6 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+font-size: 100%;
+}
 body {
 	line-height: 1;
 }
@@ -78,52 +81,61 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02',
     'cv03' 1, 'cv04' 1;
-  font-variation-settings: 'wght' 450;
+  font-variation-settings: 'wght' 400;
   font-variant: common-ligatures contextual;
-  letter-spacing: -0.02em;
-  line-height: 1.6;
-  background-color: hsl(0deg 0% 98% / 100%);
-  color: hsl(222deg 22% 22% / 100%);
+  line-height: 1.75;
+  background-color: hsl(0deg 0% 99% / 100%);
+  color: hsl(0deg 0% 22% / 100%);
 }
 
-b,
-strong,
-h3,
-h4,
-h5,
-h6 {
-  font-variation-settings: 'wght' 650;
+p {
+  margin-bottom: 1rem;
+  letter-spacing: 0.02rem;
 }
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-variation-settings: 'wght' 800;
+  letter-spacing: -0.04rem;
+  line-height: 1.3;
+}
+
 h1 {
-  font-variation-settings: 'wght' 850;
-  font-size: 3.8rem;
-  margin-bottom: 1.9rem;
+  margin-top: 0;
+  font-size: 3.052rem;
 }
 h2 {
-  font-variation-settings: 'wght' 750;
-  font-size: 3.4rem;
-  margin-bottom: 1.7rem;
+  font-size: 2.441rem;
 }
+
 h3 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.953rem;
 }
+
 h4 {
-  font-size: 2.7rem;
-  margin-bottom: 1.35rem;
+  font-size: 1.563rem;
 }
+
 h5 {
-  font-size: 2.4rem;
-  margin-bottom: 1.2rem;
+  font-size: 1.25rem;
+}
+
+small {
+  font-size: 0.8rem;
 }
 
 a {
-  color: hsl(47deg 94% 43% / 100%);
+  color: hsl(0deg 0% 50% / 70%);
   text-decoration: none;
+  font-variation-settings: 'wght' 800;
+  letter-spacing:0.05rem;
+  cursor: pointer;
+  border-bottom: 0.5px dashed transparent;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: hsl(145deg 64% 70% / 100%);
+  border-bottom: 1px dashed hsl(145deg 64% 70% / 100%);
 }
 
 img {

@@ -22,16 +22,22 @@ export default function Layout({ children, home}) {
       <>
         {home ? (
           <HomeHeader>
-            <Image
-              priority
-              src="/profile.svg"
-              alt={meta.siteTitle}
-              height={55}
-              width={55}
-            />
-            <h1>{meta.siteTitle}</h1>
-            <h3>An interaction designer loves front-end programming & 
-              designs products and services that can play in strategies</h3>
+              <AvartaWrapper>
+                <Image
+                  priority
+                  src="/profile.svg"
+                  alt={meta.siteTitle}
+                  height={55}
+                  width={55}
+                />
+              </AvartaWrapper>
+                <Title>Hey! I'm {meta.siteTitle}</Title>
+                <Intro>An interaction designer loves front-end programming & 
+                designs products and services that can play in strategies</Intro>
+                <Link href='/'><a>Resume</a></Link>
+                <Link href='/'><a>github</a></Link>
+                <Link href='/'><a>LinkedIn</a></Link>
+                <Link href='/'><a>Unsplash</a></Link>
           </HomeHeader>
         ) : (
           <PageHeader>
@@ -43,67 +49,69 @@ export default function Layout({ children, home}) {
               width={30}
             />
             <Link href="/">
-            <a><h6>{meta.siteTitle}</h6></a>
+              <h5>{meta.siteTitle}</h5>
             </Link>
           </PageHeader>
         )}
       </>
       <main>{children}</main>
       {!home && (
-        <div>
+        <BackhomeWrapper>
           <Link href="/">
-            <a>← Back to home</a>
+            <LinkWrapper>← Back to home</LinkWrapper>
           </Link>
-        </div>
+        </BackhomeWrapper>
       )}
     </LayoutWrapper>
   )
 }
 
 const LayoutWrapper = styled.div`
-  max-width: 50rem;
+  max-width: 56rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
 `
 const HomeHeader = styled.div`
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
   margin-bottom: 1rem;
-  
-  h1 {
-    font-size: 2.5rem;
-    line-height: 1.3;
-    letter-spacing: -0.05rem;
-    margin: 0 0 0.6rem 0;
-  }
-  h3 {
-    font-size: 1.5rem;
-    line-height:1.3;
-    margin: 0;
+
+  a{
     font-variation-settings: 'wght' 600;
+    margin-right: .69rem;
+    &:hover{
+      color: hsl(145deg 64% 70% / 100%);;
+    }
   }
 `
-
+const Title = styled.h1`
+  margin: 1.38rem 0 1.38rem;
+  letter-spacing: 0.05rem;
+` 
+const Intro = styled.h4`
+  margin: 0;
+  margin-bottom: 1.38rem;
+  letter-spacing: -0.02rem;
+  font-variation-settings: 'wght' 500;
+`
+const AvartaWrapper = styled.div`
+  display: flex;
+`
 const PageHeader = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
 
-  h6{
-    margin-left: 8px;
+  h5{
+    margin:0;
+    margin-left:0.5rem;
     margin-bottom: 0;
-    color: hsl(222deg 22% 22% / 100%);
-
+    font-variation-settings: 'wght' 500;
+    cursor: pointer;
   }
 `
-const LinkWrapper = styled.div`
-  display: flex;
-
-  p{
-    color: hsl(0deg 0% 22% / 100%);
-    font-size: 1.2rem;
-    line-height:1.3;
-    margin: 0.3rem 0 0;
-    font-variation-settings: 'wght' 450;
-    margin-right: .5rem;
-  }
+const LinkWrapper = styled.a`
+  display: inline-block;
+`
+const BackhomeWrapper = styled.div`
+  margin: 1rem 0;
 `
