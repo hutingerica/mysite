@@ -17,6 +17,7 @@ export default function Home({posts}) {
         <title>Erica Huang - Designer, creator and introvert</title>
         <link rel="icon" href="favicon.ico" />
       </Head>
+      <div>
       <h4>Selected Projects and Experiements</h4>
       <Wrapper>
           {posts.map(({ slug, tag1, tag2 , title , description }) => (
@@ -34,7 +35,7 @@ export default function Home({posts}) {
             </ListItem>
           ))}
       </Wrapper>
-
+      </div>
       <Footer>
           <p>© 2020-present Erica Huang. All Rights Reserved.</p>
           <p>Made with
