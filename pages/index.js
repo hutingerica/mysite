@@ -14,13 +14,11 @@ export default function Home({posts}) {
   return (
     <Layout home>
       <Head>
-        <title>Erica Huang</title>
+        <title>Erica Huang - Designer, creator and introvert</title>
         <link rel="icon" href="favicon.ico" />
       </Head>
-
-      <main>
-        <h4>Selected Projects and Experiements</h4>
-        <Wrapper>
+      <h4>Selected Projects and Experiements</h4>
+      <Wrapper>
           {posts.map(({ slug, tag1, tag2 , title , description }) => (
             <ListItem key={slug}>
               <Link href={`/project/${slug}`}>
@@ -35,12 +33,11 @@ export default function Home({posts}) {
               </Link>
             </ListItem>
           ))}
-        </Wrapper>
-      </main>
+      </Wrapper>
 
       <Footer>
           <p>© 2020-present Erica Huang. All Rights Reserved.</p>
-          <p>Made by myself with
+          <p>Made with
             <a target="_blank" href="https://nextjs.org">Next.js</a>
             <a target="_blank" href="https://mdxjs.com">MDX</a>
             <a target="_blank" href="https://www.styled-components.com">Styled-Component</a>
@@ -51,7 +48,6 @@ export default function Home({posts}) {
 )}
 
 const Wrapper = styled.ul`
-  min-height: 100vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -101,18 +97,18 @@ const ItemWrapper = styled.div`
   margin-bottom: .5rem;
 `
 const Footer = styled.footer`
+  margin-top: 4rem;
+  font-size: .8rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   letter-spacing: 0rem;
-  color: hsl(0deg 0% 0% / 100%);
 
   p{
     margin:0;
   }
 
   a {
-    color: hsl(0deg 0% 22% / 100%);
     margin-left: .5rem;
     font-variation-settings: 'wght' 400;
   }

@@ -80,12 +80,16 @@ table {
   --fg: hsl(0deg 0% 22% / 100%);
   --ag: hsl(0deg 0% 22% / 100%);
   --sbg: hsl(145deg 64% 96% / 100%);
+  --sbg-hover: hsl(145deg 64% 96% / 30%);
+  --hbg: hsl(0deg 0% 98% / 60%);
 }
   [data-theme="dark"] {
     --fg: hsl(0deg 15% 90% / 100%);
     --bg: hsl(0deg 0% 22% / 100%);
-    --ag: hsl(0deg 15% 90% / 80%);
+    --ag: hsl(0deg 15% 90% / 90%);
     --sbg: hsl(145deg 64% 5% / 100%);
+    --sbg-hover: hsl(145deg 64% 5% / 30%);
+    --hbg: hsl(0deg 0% 22% / 60%);
   }
 
 body {
@@ -102,14 +106,39 @@ body {
   background-color: var(--bg);
 }
 
+::selection{
+    color: var(--bg);
+    background: var(--fg);
+}
+header {
+  background-color: var(--hbg);
+}
+footer {
+  color: var(--fg);
+}
+
 section {
   color: var(--fg);
   background-color: var(--sbg);
 }
 
+button {
+  color: var(--fg);
+  background-color: var(--bg);
+  border: 1px dashed hsl(145deg 64% 70% / 50%);
+  transition: ease-in-out color 100ms, ease-in-out background-color 100ms;
+
+  &:hover{
+    color: var(--bg);
+    background-color: var(--fg);
+    border: 1px dashed hsl(145deg 64% 70% / 0%);
+  }
+}
+
 p {
   margin-bottom: 1rem;
   letter-spacing: 0.02rem;
+  white-space: pre-line;
 }
 
 h1, h2, h3, h4, h5 {
@@ -145,11 +174,12 @@ small {
 
 a {
   color: var(--ag);
+  font-variation-settings: 'wght' 600;
   text-decoration: none;
-  font-variation-settings: 'wght' 800;
-  letter-spacing:0.05rem;
+  letter-spacing:0.02rem;
   cursor: pointer;
   border-bottom: 0.5px dashed transparent;
+  transition: ease-in color 100ms, ease-in border-bottom 200ms;
 }
 
 a:hover {

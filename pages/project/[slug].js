@@ -14,7 +14,7 @@ export default function Blog({ mdxSource, frontMatter }) {
     <Layout>
       <MDXLayout frontMatter={frontMatter}>
         <Head>
-          <title>{frontMatter.title}</title>
+          <title>{frontMatter.title} - Erica Huang</title>
           <link rel="icon" href="favicon.ico" />
         </Head>
         {content}

@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link';
+import StyledImage from '../components/StyledImage'
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -17,8 +17,9 @@ const CustomLink = (props) => {
 };
 
 const MDXComponents = {
-  Image,
+  StyledImage,
   a: CustomLink,
 
 };
 export default MDXComponents;
+
