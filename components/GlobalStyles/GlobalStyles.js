@@ -81,7 +81,7 @@ table {
   --ag: hsl(0deg 0% 22% / 100%);
   --sbg: hsl(145deg 64% 96% / 100%);
   --sbg-hover: hsl(145deg 64% 96% / 30%);
-  --hbg: hsl(0deg 0% 98% / 60%);
+  --hbg: hsl(0deg 0% 98% / 95%);
 }
   [data-theme="dark"] {
     --fg: hsl(0deg 15% 90% / 100%);
@@ -89,7 +89,7 @@ table {
     --ag: hsl(0deg 15% 90% / 90%);
     --sbg: hsl(145deg 64% 5% / 100%);
     --sbg-hover: hsl(145deg 64% 5% / 30%);
-    --hbg: hsl(0deg 0% 22% / 60%);
+    --hbg: hsl(0deg 0% 22% / 95%);
   }
 
 body {
@@ -125,13 +125,12 @@ section {
 button {
   color: var(--fg);
   background-color: var(--bg);
-  border: 1px dashed hsl(145deg 64% 70% / 50%);
+  border:none;
   transition: ease-in-out color 100ms, ease-in-out background-color 100ms;
 
   &:hover{
     color: var(--bg);
     background-color: var(--fg);
-    border: 1px dashed hsl(145deg 64% 70% / 0%);
   }
 }
 

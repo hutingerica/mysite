@@ -295,7 +295,7 @@ const PageHeader = styled.header`
   margin: 0 -1rem 2rem;
   position: sticky;
   top: 0;
-  backdrop-filter: saturate(0) blur(10px);
+  backdrop-filter: saturate(30%) blur(5px);
 
   svg {
       width: 2rem;
