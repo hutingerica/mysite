@@ -83,6 +83,7 @@ export default function Resume(){
           <Details>
             <Subtitle>BSc Quantitative Finance</Subtitle>
             <p>National Tsing-Hua University (Taiwan)</p>
+            <p>GPA: 3.5/4.0</p>
           </Details>
         </ListItem>
       </ul>
@@ -252,6 +253,7 @@ const Date = styled.p`
     margin: 0;
     padding: 0;
     opacity: .6;
+    font-size: .8rem;
   }
 `
 const Details = styled.div`
@@ -295,8 +297,8 @@ const TagImage = styled.div`
   margin: .5rem;
   padding:.25rem .5rem;
   border-radius: 6px;
-  width:40px;
-  height:40px;
+  width:2.5rem;
+  height:2.5rem;
   background-color: hsl(145deg 64% 70% / 10%);
   border: 1px dashed hsl(145deg 64% 70% / 40%);
   &:hover{
