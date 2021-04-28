@@ -83,7 +83,6 @@ export default function Resume(){
           <Details>
             <Subtitle>BSc Quantitative Finance</Subtitle>
             <p>National Tsing-Hua University (Taiwan)</p>
-            <p>GPA: 3.5/4.0</p>
           </Details>
         </ListItem>
       </ul>
@@ -246,17 +245,31 @@ const SectionWrapper = styled.section`
 `
 const Date = styled.p`
   flex:1;
+  @media(max-width:768px){
+    padding-right: 1rem;
+  }
+  @media(max-width:642px){
+    margin: 0;
+    padding: 0;
+    opacity: .6;
+  }
 `
 const Details = styled.div`
   display: flex;
   flex-direction: column;
   flex:3;
+  @media(max-width:768px){
+    flex:5;
+  }
 `
 const ListItem = styled.li`
   margin: .5rem 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  @media(max-width:642px){
+    flex-direction: column;
+  }
 `
 const TagLists = styled.ul`
   display: flex;

@@ -203,5 +203,27 @@ details summary {
   cursor: pointer;
 }
 
+@media (max-width: 543px){
+  h1{
+    font-size: 2.441rem;
+  }
+  h2 {
+    font-size: 1.953rem;
+}
+  h3 {
+    font-size: 1.563rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.15rem;
+  }
+  small {
+    font-size: 1rem;
+  }
+}
 `
 export default GlobalStyles

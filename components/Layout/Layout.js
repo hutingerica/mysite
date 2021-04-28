@@ -257,6 +257,10 @@ const HomeHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width:768px){
+    margin-top: 1rem;
+  }
 `
 const TextWrapper = styled.div`
   display: inline-block;
@@ -307,6 +311,9 @@ const PageHeader = styled.header`
     margin-bottom: 0;
     font-variation-settings: 'wght' 500;
     cursor: pointer;
+  }
+  @media (max-width:768px){
+    padding-top: 1rem;
   }
 `
 const HeaderWrapper = styled.a`
