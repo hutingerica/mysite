@@ -357,7 +357,7 @@ const BackhomeWrapper = styled.div`
 // override svg style
 const ThemeButton = styled.button`
   padding: .5rem;
-  border-radius: 4px;
+  border-radius: 10px;
   &:hover{
     cursor: pointer;
   }
