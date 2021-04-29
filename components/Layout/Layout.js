@@ -17,7 +17,7 @@ export default function Layout({ children, home}) {
 
   const meta = {
     siteTitle: "Erica Huang",
-    description: "Hey! I'm a digital product designer. I mostly make websites. Currently, I am building a knowledge sharing website for people to take part in confronting surplus food. My everyday treat is to turn design into codes. When I'm not digging in Figma or Visual Studio Code, you’ll find me exploring a bookstore or local farmer market, walking, or foraging.",
+    description: "User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centered design. Erica enjoys digging into core problems, figuring out design strategy, creating clean interfaces, and bringing delightful solutions to people through technology.",
     image: "/avarta.svg",
     favIcon:"/favicon.ico"
   };
@@ -247,10 +247,12 @@ const LayoutWrapper = styled.div`
 const HomeWrapper = styled.div`
   padding-bottom: 6rem;
   margin-bottom: 1rem;
-
   svg {
       width: 4rem;
     }
+  @media(max-width:425px){
+    padding-bottom:1rem;
+  }
 `
 const HomeHeader = styled.header`
   margin-top: 3rem;
@@ -277,8 +279,15 @@ const Links = styled.div`
     }
 `
 const Title = styled.h1`
-  margin: 1.38rem 0 1.38rem;
+  margin: 1.38rem 0;
   letter-spacing: 0.05rem;
+  @media(max-width:543px){
+    margin: 1rem 0;
+  }
+  @media(max-width:425px){
+    margin: .8rem 0;
+  }
+
 ` 
 const Intro = styled.div`
   p{
@@ -286,20 +295,24 @@ const Intro = styled.div`
   margin-bottom: 1rem;
   letter-spacing: 0.02rem;
   white-space: pre-line;
+  @media(max-width:425px){
+    margin-bottom:.5rem;
   }
+  }
+
 `
 // non-homepage
 const PageHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
   //sticky header
   padding: 3rem 1rem 1rem 1rem;
-  margin: 0 -1rem 2rem;
+  margin: 0 -1rem;
   position: sticky;
   top: 0;
   backdrop-filter: saturate(30%) blur(5px);
+  z-index:2;
 
   svg {
       width: 2rem;

@@ -14,6 +14,7 @@ export default function Resume(){
       <Role>Digital Product Designer</Role>
       <SectionWrapper>
         <p>
+        User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centered design. Erica enjoys digging into core problems, figuring out design strategy, creating clean interfaces, and bringing delightful solutions to people through technology.
         </p>
       </SectionWrapper>
       <Subtitle>Work</Subtitle>
@@ -69,6 +70,7 @@ export default function Resume(){
           </Details>
         </ListItem>
       </ul>
+
       <Subtitle>Education</Subtitle>
       <ul>
         <ListItem>
@@ -83,7 +85,6 @@ export default function Resume(){
           <Details>
             <Subtitle>BSc Quantitative Finance</Subtitle>
             <p>National Tsing-Hua University (Taiwan)</p>
-            <p>GPA: 3.5/4.0</p>
           </Details>
         </ListItem>
       </ul>
@@ -225,14 +226,29 @@ export default function Resume(){
 const Title = styled.h4`
   font-variation-settings: 'wght' 400;
   margin: 3rem 0 .69rem;
+  @media(max-width: 425px){
+    margin: 1rem 0 0.5rem;
+  }
 `
 const Subtitle = styled.h5`
   font-variation-settings: 'wght' 800;
   margin:0;
+  margin-top: 1.5rem;
 
+  @media(max-width:642px){
+    margin-top:2rem;
+  }  
   &:last-child{
-    text-align: center;
-    margin: 2.5rem auto;
+      text-align: center;
+      margin: 2.5rem auto;
+    }
+  ul & {
+    font-variation-settings: 'wght' 800;
+    margin:0;
+    @media(max-width:642px){
+      padding-right:1.5rem;
+      margin-right:7rem;
+    }
   }
 `
 const Role = styled.h2`
@@ -243,6 +259,13 @@ const SectionWrapper = styled.section`
   padding: 1rem;
   margin: 0 -1rem 1.38rem;
   border-radius: 6px;
+  p{
+    margin: 0;
+  }
+  @media(max-width:928px){
+    margin: 0 0 1.38rem;
+    padding: 1rem 2rem;
+  }
 `
 const Date = styled.p`
   flex:1;
@@ -253,7 +276,10 @@ const Date = styled.p`
     margin: 0;
     padding: 0;
     opacity: .6;
+    position: absolute;
     font-size: .8rem;
+    top:0;
+    right:4px;
   }
 `
 const Details = styled.div`
@@ -271,6 +297,7 @@ const ListItem = styled.li`
   justify-content: space-between;
   @media(max-width:642px){
     flex-direction: column;
+    position: relative;
   }
 `
 const TagLists = styled.ul`

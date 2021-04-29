@@ -36,7 +36,7 @@ export default function Home({posts}) {
         </Wrapper>
       <Footer>
           <p>© 2020-present Erica Huang. All Rights Reserved.</p>
-          <p>Made with
+          <p>Made by using
             <a target="_blank" href="https://nextjs.org">Next.js</a>
             <a target="_blank" href="https://mdxjs.com">MDX</a>
             <a target="_blank" href="https://www.styled-components.com">Styled-Component</a>
@@ -102,13 +102,14 @@ const Footer = styled.footer`
   flex-direction: column;
   align-items: center;
   letter-spacing: 0rem;
-
   p{
     margin:0;
   }
-
   a {
     margin-left: .5rem;
     font-variation-settings: 'wght' 400;
+  }
+  @media(max-width:374px){
+    align-items: flex-start;
   }
 `
