@@ -18,7 +18,7 @@ export default function Layout({ children, home}) {
   const meta = {
     siteTitle: "Erica Huang",
     description: "A digital product designer enjoys digging into core problems, figuring out design strategy, creating clean interfaces, and bringing delightful solutions to people through technology.",
-    image: "/avarta.svg",
+    image: "/meta-image.png",
     favIcon:"/favicon.ico",
     type:"website"
   };
