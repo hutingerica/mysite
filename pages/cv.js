@@ -184,8 +184,9 @@ const Subtitle = styled.h5`
   ul & {
     font-variation-settings: 'wght' 800;
     margin:0;
+
     @media(max-width:642px){
-      padding-right:1.5rem;
+      padding-right:2rem;
       margin-right:7rem;
     }
   }
@@ -203,7 +204,7 @@ const SectionWrapper = styled.section`
   }
   @media(max-width:928px){
     margin: 0 0 1.38rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1.1rem;
   }
 `
 const Date = styled.p`
@@ -227,6 +228,12 @@ const Details = styled.div`
   flex:3;
   @media(max-width:768px){
     flex:5;
+
+    p{
+      &:first-of-type{
+        letter-spacing: -0.03rem;
+      }
+    }
   }
 `
 const ListItem = styled.li`
@@ -256,4 +263,8 @@ const TagItem = styled.li`
   margin: .5rem;
   width: max-content;
   background-color: hsl(145deg 64% 70% / 10%);
+  @media(max-width:642px){
+    padding:.125rem .25rem;
+    margin: .25rem;
+  }
 `
