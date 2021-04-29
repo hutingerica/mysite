@@ -157,7 +157,7 @@ export default function Resume(){
         <TagItem>Notion</TagItem>
         <TagItem>G-Suite</TagItem>
       </TagLists>
-      <Subtitle><a target="blank" href="https://drive.google.com/file/d/1p2DTRsN1TlHtFN2rb7G0Vbx8WGRmO7b7/view?usp=sharing">Download CV</a></Subtitle>
+      <Subtitle><a target="_blank" href="https://drive.google.com/file/d/1p2DTRsN1TlHtFN2rb7G0Vbx8WGRmO7b7/view?usp=sharing">Download CV</a></Subtitle>
     </Layout>
   )
 }

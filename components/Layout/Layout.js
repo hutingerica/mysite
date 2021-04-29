@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import styled from 'styled-components'
+import { useRouter } from 'next/router';
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes'
@@ -14,21 +14,30 @@ export default function Layout({ children, home}) {
 
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
-
+  const router = useRouter();
   const meta = {
     siteTitle: "Erica Huang",
-    description: "User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centered design. Erica enjoys digging into core problems, figuring out design strategy, creating clean interfaces, and bringing delightful solutions to people through technology.",
+    description: "A digital product designer enjoys digging into core problems, figuring out design strategy, creating clean interfaces, and bringing delightful solutions to people through technology.",
     image: "/avarta.svg",
-    favIcon:"/favicon.ico"
+    favIcon:"/favicon.ico",
+    type:"website"
   };
 
   return (
     <LayoutWrapper>
       <Head>
         <link rel="icon" href= {meta.favIcon}/>
+        <meta name="robots" content="follow, index" />
         <meta name="description" content={meta.description}/>
-        <meta property="og:image" content={meta.image}/>
+        <link rel="canonical" href={`https://ericahuangdesign.com${router.asPath}`} />
+        <meta property="og:url" content={`https://ericahuangdesign.com${router.asPath}`} />
         <meta name="og:title" content={`${meta.siteTitle}` + "- Designer, creator and introvert"}/>
+        <meta property="og:image" content={meta.image}/>
+        <meta property="og:type" content={meta.type} />
+        <meta property="og:site_name" content={meta.siteTitle} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:title" content={meta.siteTitle} />
+        <meta property="og:image" content={meta.image} />
       </Head>
       <>
         {home ? (
@@ -121,16 +130,16 @@ export default function Layout({ children, home}) {
                 <Title>Hey! I'm {meta.siteTitle}</Title>
                 <Intro>
                   <p>
-                  I am a digital product designer. I mostly make websites. Currently, I am building a knowledge sharing <StyledTippy content="👀 coming soon" placement="top"><a>website</a></StyledTippy> for people to take part in confronting surplus food. My everyday treat is to turn design practices into codes after learning Josh’s <a href="https://courses.joshwcomeau.com">CSS for JavaScript Developers</a> course. On the side, I help develop an e-commerce website for my friend’s co-op cafe since COVID pandemic hit last year.
+                  I am a digital product designer. I mostly make websites. Currently, I am building a knowledge sharing <StyledTippy content="👀 coming soon" placement="top"><a href="/">website</a></StyledTippy> for people to take part in confronting surplus food. My everyday treat is to turn design practices into codes after learning Josh’s <a target="_blank" href="https://courses.joshwcomeau.com">CSS for JavaScript Developers</a> course. On the side, I help develop an e-commerce website for my friend’s co-op cafe since COVID pandemic hit last year.
                   </p>
                   <p>
                   When I'm not digging into Figma or Visual Studio Code, you’ll find me exploring a bookstore or local farmer's market, walking, or foraging. As of late, I teamed up with my partner and created <StyledTippy content="👀 coming soon" placement="top"><a href="/">1522 Collective</a></StyledTippy> to practice people-planet approach through projects around food, democracy, works and education.
                   </p>
                 </Intro>
                 <Links>
-                  <a target="blank" href="https://www.linkedin.com/in/ericaypp/">LinkedIn</a>
-                  <a target="blank" href= "https://github.com/hutingerica">github</a>
-                  <a target="blank" href="https://unsplash.com/@ericaypp">Unsplash</a>
+                  <a target="_blank" href="https://www.linkedin.com/in/ericaypp/">LinkedIn</a>
+                  <a target="_blank" href= "https://github.com/hutingerica">github</a>
+                  <a target="_blank" href="https://unsplash.com/@ericaypp">Unsplash</a>
                   <Link href='/cv'><a>CV</a></Link>
                 </Links>
               </TextWrapper>
