@@ -124,7 +124,7 @@ export default function Layout({ children, home}) {
                   I am a digital product designer. I mostly make websites. Currently, I am building a knowledge sharing <StyledTippy content="👀 coming soon" placement="top"><a>website</a></StyledTippy> for people to take part in confronting surplus food. My everyday treat is to turn design practices into codes after learning Josh’s <a href="https://courses.joshwcomeau.com">CSS for JavaScript Developers</a> course. On the side, I help develop an e-commerce website for my friend’s co-op cafe since COVID pandemic hit last year.
                   </p>
                   <p>
-                  When I'm not digging into Figma or Visual Studio Code, you’ll find me exploring a bookstore or local farmer's market, walking, or foraging. As of late, I teamed up with my partner and created <a href="/">1522 Collective</a> to practice people-planet approach through projects around food, democracy, works and education.
+                  When I'm not digging into Figma or Visual Studio Code, you’ll find me exploring a bookstore or local farmer's market, walking, or foraging. As of late, I teamed up with my partner and created <StyledTippy content="👀 coming soon" placement="top"><a href="/">1522 Collective</a></StyledTippy> to practice people-planet approach through projects around food, democracy, works and education.
                   </p>
                 </Intro>
                 <Links>
