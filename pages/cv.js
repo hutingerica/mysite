@@ -13,7 +13,7 @@ export default function Resume(){
       <Role>Digital Product Designer</Role>
       <SectionWrapper>
         <p>
-        User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centered design. Erica enjoys digging into core problems, figuring out design strategy, creating clean interfaces, and bringing delightful solutions to people through technology.
+        User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centered design. Erica enjoys digging into core problems, figuring out design strategy, creating clean interfaces, and bringing delightful solutions to people.
         </p>
       </SectionWrapper>
       <Subtitle>Work</Subtitle>
@@ -34,7 +34,7 @@ export default function Resume(){
             <Subtitle>Service Designer</Subtitle>
             <p>King's Cross Bun (UK)</p>
             <p>
-              Developed coworking toolkits with project organiser to help team members in King’s Cross Bun brainstorm and make decisions on long-term project strategies. The toolkits included stakeholders analysis, project journey maps, project blueprints and etc.
+              Developed co-working toolkits with project organiser to help team members in King’s Cross Bun brainstorm and make decisions on long-term project strategies. The goal is to connect producers, customers, academics, and our planet with food, and the result of design are toolkits including stakeholders analysis, project journey maps, project blueprints and etc.
             </p>
           </Details>
         </ListItem>
@@ -99,7 +99,7 @@ export default function Resume(){
         <ListItem>
           <Date>Dec 2020</Date>
           <Details>
-            <Subtitle>React.js / Advanced CSS + Javascript / Foundation HTML, CSS + Javascript</Subtitle>
+            <Subtitle>Foundation HTML, CSS + Javascript / React.js</Subtitle>
             <p>SuperHi</p>
           </Details>
         </ListItem>

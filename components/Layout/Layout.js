@@ -137,9 +137,8 @@ export default function Layout({ children, home}) {
                   </p>
                 </Intro>
                 <Links>
-                  <a target="_blank" href="https://www.linkedin.com/in/ericaypp/">LinkedIn</a>
+                  <a target="_blank" href="https://www.linkedin.com/in/ericahuangdesign/">LinkedIn</a>
                   <a target="_blank" href= "https://github.com/hutingerica">github</a>
-                  <a target="_blank" href="https://unsplash.com/@ericaypp">Unsplash</a>
                   <Link href='/cv'><a>CV</a></Link>
                 </Links>
               </TextWrapper>
