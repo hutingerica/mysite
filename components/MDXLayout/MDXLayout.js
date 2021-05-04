@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import StyledImage from '../StyledImage'
 
 export default function MDXLayout({children, frontMatter}){
   return (
@@ -11,9 +12,10 @@ export default function MDXLayout({children, frontMatter}){
         </Tags>
         <SummaryWrapper>
         <SummaryTag>Project Summary</SummaryTag>
-        <Summary>{frontMatter.description}</Summary>
+        <Summary>{frontMatter.summary}</Summary>
         </SummaryWrapper>
       </BriefContainer>
+      {/* <StyledImage src={frontMatter.inerHeroImage} width={100} height={600}/> */}
       <ContentLayout>{children}</ContentLayout>
     </BlogLayout>
   )

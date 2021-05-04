@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -183,10 +183,25 @@ a {
   border-bottom: 0.5px dashed transparent;
   transition: ease-in color 100ms, ease-in border-bottom 200ms;
 }
-
 a:hover {
   border-bottom: 1px dashed hsl(145deg 64% 70% / 100%);
   color: hsl(145deg 64% 70% / 100%);
+}
+
+strong {
+  font-variation-settings: 'wght' 600;
+}
+blockquote {
+  padding: 0 1rem;
+  margin-left:.25rem;
+  color: var(--fg);
+  border-left: .25rem solid var(--fg);
+}
+blockquote>:first-child {
+  margin-top: 0;
+}
+blockquote>:last-child {
+  margin-bottom: 0;
 }
 
 img {
