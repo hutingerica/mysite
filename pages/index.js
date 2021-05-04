@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import Layout from '../components/Layout'
 import { getAllFilesFrontMatter } from '../lib/mdx'
 
@@ -19,23 +20,27 @@ export default function Home({posts}) {
       </Head>
         <h4>Selected Projects and Experiements</h4>
         <Wrapper>
-          {posts.map(({ slug, tag1, tag2 , title , description }) => (
+          {posts.map(({ slug, tag1, title, heroImage, subtitle }) => (
             <ListItem key={slug}>
               <Link href={`/project/${slug}`}>
                 <ItemLink>
                     <ItemWrapper>
                       <ItemTitle>{title}</ItemTitle>
-                      <ItemTag>{tag1}</ItemTag>
-                      <ItemTag>{tag2}</ItemTag>
+                      <ItemSubtitle>{subtitle}</ItemSubtitle>
+                      <ImageWrapper>
+                        <Image priority quality={100} src={`/photos/${heroImage}`} alt={heroImage} width={1000} height={710}/>
+                      </ImageWrapper>
+                      <ItemTagWrapper>
+                        <ItemTag>{tag1}</ItemTag>
+                      </ItemTagWrapper>
                     </ItemWrapper>
-                    <Description>{description}</Description>
                 </ItemLink>
               </Link>
             </ListItem>
           ))}
         </Wrapper>
       <Footer>
-          <p>© 2020-present Erica Huang. All Rights Reserved.</p>
+          <p>Erica Huang © 2021. All Rights Reserved.</p>
           <p>Made by using
             <a target="_blank" href="https://nextjs.org">Next.js</a>
             <a target="_blank" href="https://mdxjs.com">MDX</a>
@@ -48,52 +53,83 @@ export default function Home({posts}) {
 
 const Wrapper = styled.ul`
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-`
-const ListItem = styled.li`
-  width: 100%;
-  margin: 0;
-`
-const ItemTag = styled.small`
-    letter-spacing: 0rem;
-    padding: 0 .25rem;
-    margin-left: 1rem;
-    color: hsl(0deg 0% 50% / 100%);
-    background-color: hsl(0deg 0% 80% / 20%);
-    border-radius: 4px;
-    font-variation-settings: 'wght' 500;
-`
-const ItemTitle = styled.h4`
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 0 -1rem;
+
+  @media(max-width: 799px){
+    flex-direction:column;
     margin: 0;
-    font-variation-settings: 'wght' 600;
-`
-
-const ItemLink = styled.a`
-  cursor: pointer;
-  margin-left: -1rem;
-  padding: .5rem 1rem;
-  border-radius: 8px;
-  border: none;
-  display: inline-block;
-
-  &:hover {
-    border: none;
-    text-decoration: none;
-
-    ${ItemTag} {
-    background-color: hsl(145deg 64% 70% / 100%);
-    }
   }
 `
-const Description = styled.p`
-  font-variation-settings: 'wght' 400;
+const ItemTag = styled.small`
+    opacity: 0;
+    letter-spacing: 0rem;
+    padding: .25rem .5rem;
+    margin-right: .125rem;
+    color: hsl(0deg 0% 0% / 100%);
+    background-color: hsl(145deg 64% 70% / 100%);
+    border: 1px dashed hsl(0deg 0% 0% / 100%);
+    font-variation-settings: 'wght' 500;
+    transition: opacity .125s ease-in;
+`
+const ItemLink = styled.a`
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  display: block;
+`
+const ImageWrapper = styled.div`
+  position: relative;
+  width:100%;
+`
+const ListItem = styled.li`
+  display: block;
+  margin: 1rem 1rem;
+  width: 46%;
+  border-top: 12px solid hsl(0deg 0% 50% / 5%);
+  padding-top:.5rem;
+  transition: ease-in-out .25s border;
+
+  @media(max-width: 799px){
+    width:100%;
+    margin:0;
+    margin-bottom: 1.5rem;
+  }
+
+  &:hover {
+    ${ItemTag}{
+      opacity: 1;
+    }
+    ${ItemLink}{
+      border: none;
+      text-decoration: none;
+    }
+
+    border-color: hsl(145deg 64% 70% / 100%);
+  }
 
 `
 const ItemWrapper = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   margin-bottom: .5rem;
+  position: relative;
+
+`
+const ItemTitle = styled.h3`
+    margin: 0;
+    font-variation-settings: 'wght' 600;
+`
+const ItemSubtitle = styled.h4`
+    font-variation-settings: 'wght' 400;
+    margin-top: 1rem;
+`
+const ItemTagWrapper = styled.div`
+  position: absolute;
+  bottom:-.125rem;
+  right:-.5rem;
 `
 const Footer = styled.footer`
   margin-top: 4rem;

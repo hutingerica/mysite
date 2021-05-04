@@ -95,36 +95,39 @@ export default function Layout({ children, home}) {
   117 -140 281 -119 388 49 54 85 62 128 25 128 -8 0 -46 -43 -84 -95z"/>
                   </g>
                 </svg>
-                <ThemeButton
-                aria-label="Toggle Dark Mode"
-                type="button"
-                onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-              >
-                {mounted && (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
-                    {resolvedTheme === 'dark' ? (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={3}
-                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                      />
-                    ) : (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={3}
-                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                      />
-                    )}
-                  </svg>
-                )}
-              </ThemeButton>
+                <div>
+                  <Link href='/cv'><a>CV</a></Link>
+                  <ThemeButton
+                  aria-label="Toggle Dark Mode"
+                  type="button"
+                  onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+                >
+                  {mounted && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                    >
+                      {resolvedTheme === 'dark' ? (
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={3}
+                          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                        />
+                      ) : (
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={3}
+                          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                        />
+                      )}
+                    </svg>
+                  )}
+                </ThemeButton>
+                </div>
               </HomeHeader>
               <TextWrapper>
                 <Title>Hey! I'm {meta.siteTitle}</Title>
@@ -137,10 +140,10 @@ export default function Layout({ children, home}) {
                   </p>
                 </Intro>
                 <Links>
-                  <a target="_blank" href="https://www.linkedin.com/in/ericaypp/">LinkedIn</a>
+                  <a target="_blank" href="https://www.linkedin.com/in/ericahuangdesign/">LinkedIn</a>
+                  <a href="mailto:hutingstudio@gmail.com">Email</a>
                   <a target="_blank" href= "https://github.com/hutingerica">github</a>
                   <a target="_blank" href="https://unsplash.com/@ericaypp">Unsplash</a>
-                  <Link href='/cv'><a>CV</a></Link>
                 </Links>
               </TextWrapper>
           </HomeWrapper>
@@ -203,37 +206,40 @@ export default function Layout({ children, home}) {
                 <h5>{meta.siteTitle}</h5>
               </HeaderWrapper>
             </Link>
-            <ThemeButton
-                aria-label="Toggle Dark Mode"
-                type="button"
-                onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-              >
-                {mounted && (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
-                    {resolvedTheme === 'dark' ? (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={3}
-                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                      />
-                    ) : (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={3}
-                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                      />
-                    )}
-                  </svg>
-                )}
-              </ThemeButton>
-          </PageHeader>
+            <div>
+                  <Link href='/cv'><a>CV</a></Link>
+                  <ThemeButton
+                  aria-label="Toggle Dark Mode"
+                  type="button"
+                  onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+                >
+                  {mounted && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                    >
+                      {resolvedTheme === 'dark' ? (
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={3}
+                          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                        />
+                      ) : (
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={3}
+                          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                        />
+                      )}
+                    </svg>
+                  )}
+                </ThemeButton>
+                </div>
+            </PageHeader>
         )}
       </>
       <main>{children}</main>
@@ -249,7 +255,7 @@ export default function Layout({ children, home}) {
 }
 
 const LayoutWrapper = styled.div`
-  max-width: 56rem;
+  max-width: 64rem;
   padding: 0 1rem;
   margin: 0 auto 6rem;
 `
@@ -262,6 +268,7 @@ const HomeWrapper = styled.div`
   @media(max-width:425px){
     padding-bottom:1rem;
   }
+
 `
 const HomeHeader = styled.header`
   margin-top: 3rem;
@@ -357,6 +364,7 @@ const BackhomeWrapper = styled.div`
 // override svg style
 const ThemeButton = styled.button`
   padding: .5rem;
+  margin-left: 1rem;
   border-radius: 10px;
   &:hover{
     cursor: pointer;
