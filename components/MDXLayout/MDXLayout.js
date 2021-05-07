@@ -20,13 +20,16 @@ export default function MDXLayout({children, frontMatter}){
   )
 }
 const Read = styled.div`
-  width: 100%;
+  min-width: fit-content;
 `
  const Tags = styled.div`
   color: hsl(0deg 0% 80% / 100%);
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  @media(max-width:620px){
+    flex-direction:column;
+  }
  `
  const SummaryWrapper = styled.div`
   display: flex;
