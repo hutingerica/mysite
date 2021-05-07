@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import Link from 'next/link'
-import StyledImage from '../StyledImage'
 
 export default function MDXLayout({children, frontMatter}){
   return (
@@ -8,10 +6,11 @@ export default function MDXLayout({children, frontMatter}){
       <BriefContainer>
         <ProjectTitle>{frontMatter.title}</ProjectTitle>
         <Tags>
+          <Read>{frontMatter.subtitle}</Read>
           <Read>{frontMatter.readingTime.text}</Read>
         </Tags>
         <SummaryWrapper>
-        <SummaryTag>Project Summary</SummaryTag>
+        <SummaryTag>About {frontMatter.title}</SummaryTag>
         <Summary>{frontMatter.summary}</Summary>
         </SummaryWrapper>
       </BriefContainer>
@@ -26,7 +25,8 @@ const Read = styled.div`
  const Tags = styled.div`
   color: hsl(0deg 0% 80% / 100%);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
  `
  const SummaryWrapper = styled.div`
   display: flex;
@@ -40,7 +40,6 @@ const Read = styled.div`
   max-width: max-content;
   margin: 0.5rem;
   margin-bottom:-.5rem;
-  margin-right: 2rem;
   font-variation-settings: 'wght' 700;
 
  `

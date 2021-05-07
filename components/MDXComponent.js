@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import StyledImage from '../components/StyledImage'
 import VideoPlayer from '../components/VideoPlayer'
+import Highlight from '../components/Highlight'
+import HighlightwithPic from '../components/HighlightwithPic'
+import StyledTippywithText from '../components/StyledTippywithText'
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -21,6 +24,9 @@ const MDXComponents = {
   StyledImage,
   a: CustomLink,
   VideoPlayer,
+  Highlight,
+  HighlightwithPic,
+  StyledTippywithText
 
 };
 export default MDXComponents;

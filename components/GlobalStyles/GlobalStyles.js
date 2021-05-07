@@ -34,8 +34,11 @@ font-size: 100%;
 body {
 	line-height: 1;
 }
-ol, ul {
+ul {
 	list-style: none;
+}
+ol {
+  margin-left:1rem;
 }
 blockquote, q {
 	quotes: none;
@@ -99,7 +102,7 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02',
     'cv03' 1, 'cv04' 1;
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: 'wght' 500;
   font-variant: common-ligatures contextual;
   line-height: 1.75;
   color: var(--fg);
@@ -176,7 +179,7 @@ small {
 
 a {
   color: var(--ag);
-  font-variation-settings: 'wght' 600;
+  font-variation-settings: 'wght' 800;
   text-decoration: none;
   letter-spacing:0.02rem;
   cursor: pointer;
@@ -187,21 +190,37 @@ a:hover {
   border-bottom: 1px dashed hsl(145deg 64% 70% / 100%);
   color: hsl(145deg 64% 70% / 100%);
 }
-
 strong {
-  font-variation-settings: 'wght' 600;
+  font-variation-settings: 'wght' 750;
 }
 blockquote {
-  padding: 0 1rem;
+  padding-left:1rem;
   margin-left:.25rem;
+  margin-bottom:4rem;
   color: var(--fg);
   border-left: .25rem solid var(--fg);
+  ul {
+    list-style: circle;
+    margin-left:1rem;
+  }
+  ol {
+    list-style: lower-alpha;
+    margin-left:1rem;
+  }
 }
 blockquote>:first-child {
   margin-top: 0;
 }
 blockquote>:last-child {
   margin-bottom: 0;
+}
+code {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  color: var(--bg);
+  background-color: var(--fg);
+  border-radius: 3px;
 }
 
 img {
