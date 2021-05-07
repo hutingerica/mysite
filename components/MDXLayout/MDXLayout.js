@@ -20,7 +20,7 @@ export default function MDXLayout({children, frontMatter}){
   )
 }
 const Read = styled.div`
-  min-width: max-content;
+  width: 100%;
 `
  const Tags = styled.div`
   color: hsl(0deg 0% 80% / 100%);
