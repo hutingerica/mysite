@@ -108,6 +108,9 @@ body {
   color: var(--fg);
   background-color: var(--bg);
   font-size: 18px;
+  @media(max-width:768px){
+    font-size: 16px;
+  }
 }
 
 ::selection{
