@@ -107,6 +107,7 @@ body {
   line-height: 1.75;
   color: var(--fg);
   background-color: var(--bg);
+  font-size: 18px;
 }
 
 ::selection{

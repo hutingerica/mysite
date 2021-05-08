@@ -224,14 +224,14 @@ export default function Layout({ children, home}) {
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          strokeWidth={3}
+                          strokeWidth={2}
                           d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
                         />
                       ) : (
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          strokeWidth={3}
+                          strokeWidth={2}
                           d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
                         />
                       )}
@@ -263,7 +263,7 @@ const HomeWrapper = styled.div`
   padding-bottom: 6rem;
   margin-bottom: 1rem;
   svg {
-      width: 4rem;
+      width: 6rem;
     }
   @media(max-width:425px){
     padding-bottom:1rem;
@@ -331,7 +331,7 @@ const PageHeader = styled.header`
   z-index:2;
 
   svg {
-      width: 2rem;
+      width: 2.5rem;
   }
   h5{
     flex:1;
