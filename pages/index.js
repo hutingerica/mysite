@@ -41,7 +41,7 @@ export default function Home({posts}) {
         </Wrapper>
       <Footer>
           <p>Erica Huang © 2021. All Rights Reserved.</p>
-          <p>Made by using
+          <p>Made with❤️ and tools : 
             <a target="_blank" href="https://nextjs.org">Next.js</a>
             <a target="_blank" href="https://mdxjs.com">MDX</a>
             <a target="_blank" href="https://www.styled-components.com">Styled-Component</a>
@@ -140,12 +140,10 @@ const Footer = styled.footer`
   letter-spacing: 0rem;
   p{
     margin:0;
-  }
-  a {
-    margin-left: .5rem;
-    font-variation-settings: 'wght' 400;
-  }
-  @media(max-width:374px){
-    align-items: flex-start;
+    text-align: center;
+    a {
+      margin-left: .5rem;
+      font-variation-settings: 'wght' 400;
+    }
   }
 `
