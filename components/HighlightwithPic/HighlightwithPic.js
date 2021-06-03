@@ -5,7 +5,7 @@ export default function HighlightwithPic({picSrc, children, picFlex, textFlex, b
 
   return(
     <FlexWrapper>
-      <PicWrapper style={{'--flex': picFlex +'%', '--bg': bg }}>
+      <PicWrapper style={{'--flex': picFlex, '--bg': bg }}>
         <Image
           alt={picSrc}
           src={`/photos/${picSrc}`}
