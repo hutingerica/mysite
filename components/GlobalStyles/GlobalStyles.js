@@ -107,6 +107,10 @@ body {
   line-height: 1.75;
   color: var(--fg);
   background-color: var(--bg);
+  font-size: 18px;
+  @media(max-width:768px){
+    font-size: initial;
+  }
 }
 
 ::selection{
@@ -179,7 +183,7 @@ small {
 
 a {
   color: var(--ag);
-  font-variation-settings: 'wght' 800;
+  font-variation-settings: 'wght' 900;
   text-decoration: none;
   letter-spacing:0.02rem;
   cursor: pointer;
@@ -196,7 +200,7 @@ strong {
 blockquote {
   padding-left:1rem;
   margin-left:.25rem;
-  margin-bottom:4rem;
+  margin-bottom:1rem;
   color: var(--fg);
   border-left: .25rem solid var(--fg);
   ul {
