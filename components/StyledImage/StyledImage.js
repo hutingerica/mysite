@@ -1,29 +1,29 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 
-export default function StyledImage({objectFit, srcLeft, srcRight, flexLeft, flexRight, width, bg, gap}){
+export default function StyledImage({caption1, caption2, objectFit, srcLeft, srcRight, flexLeft, flexRight, width, bg, gap}){
 
   return(
     <FlexWrapper style={{'--width': width + '%', '--bg': bg }}>
       <Wrapper style={{'--flex': flexLeft }}>
-        <Image
-          alt={srcLeft}
-          src={`/photos/${srcLeft}`}
-          layout="intrinsic"
-          layout="fill"
-          objectFit={objectFit}
-        />
+          <Image
+            alt={srcLeft}
+            src={`/photos/${srcLeft}`}
+            layout="intrinsic"
+            layout="fill"
+            objectFit={objectFit}
+          />
       </Wrapper>
       <Gap style={{ '--gap': gap +'rem' }}/>
       {flexRight ? (
       <Wrapper style={{'--flex': flexRight }}>
-        <Image
-          alt={srcRight}
-          src={`/photos/${srcRight}`}
-          layout="intrinsic"
-          layout="fill"
-          objectFit={objectFit}
-        />
+          <Image
+            alt={srcRight}
+            src={`/photos/${srcRight}`}
+            layout="intrinsic"
+            layout="fill"
+            objectFit={objectFit}
+          />
       </Wrapper>
       ): (
         <NoPic/>

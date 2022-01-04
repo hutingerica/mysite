@@ -18,7 +18,7 @@ export default function Home({posts}) {
         <title>Erica Huang - Designer, creator and introvert</title>
         <link rel="icon" href="favicon.ico" />
       </Head>
-        <h4>Selected Projects and Experiements</h4>
+        <h4>Selected Projects and Something Fun</h4>
         <Wrapper>
           {posts.map(({ slug, tag1, title, heroImage, subtitle }) => (
             <ListItem key={slug}>

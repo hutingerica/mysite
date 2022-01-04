@@ -24,7 +24,7 @@ export default function Resume(){
             <Subtitle>Digital Product Designer</Subtitle>
             <p>Freelance (UK)</p>
             <p>
-              Mostly made websites. Built prototypes, experience maps and design systems to ensure that end-to-end digital service delivery is constantly iterating to be more user-centered. Lately, practiced <a target="_blank" href="https://space10.com/beyond-human-centered-design/">people-planet design</a> approach through projects' topic around food, democracy, works and education.
+              Mostly made websites and design system. Built prototypes, user experience journey maps to ensure that end-to-end digital service delivery is constantly iterating to be more user-centered. Lately, practiced <a target="_blank" href="https://space10.com/beyond-human-centered-design/">people-planet design</a> approach through projects' topic around food issues.
             </p>
           </Details>
         </ListItem>
