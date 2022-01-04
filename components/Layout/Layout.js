@@ -365,7 +365,7 @@ const BackhomeWrapper = styled.div`
 const ThemeButton = styled.button`
   padding: .5rem;
   margin-left: 1rem;
-  border-radius: 10px;
+  border-radius: .8rem .8rem 0;
   &:hover{
     cursor: pointer;
   }

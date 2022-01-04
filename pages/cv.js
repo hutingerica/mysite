@@ -198,7 +198,7 @@ const SectionWrapper = styled.section`
   border: 1px dashed hsl(145deg 64% 70% / 50%);
   padding: 1rem;
   margin: 0 -1rem 1.38rem;
-  border-radius: 6px;
+  border-radius: .8rem .8rem 0 .8rem;
   p{
     margin: 0;
   }
@@ -258,11 +258,11 @@ const TagItem = styled.li`
   letter-spacing: 0.02rem;
   font-size: .8rem;
   font-variation-settings: 'wght' 600;
-  border-radius: 6px;
-  padding:.25rem .5rem;
-  margin: .5rem;
+  border-radius: .4rem .4rem 0;
+  padding:.25rem .75rem;
+  margin: .45rem;
   width: max-content;
-  background-color: hsl(145deg 64% 70% / 10%);
+  background-color: hsl(145deg 64% 70% / 20%);
   @media(max-width:642px){
     padding:.125rem .25rem;
     margin: .25rem;
