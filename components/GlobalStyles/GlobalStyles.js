@@ -183,7 +183,7 @@ small {
 
 a {
   color: var(--ag);
-  font-variation-settings: 'wght' 900;
+  font-variation-settings: 'wght' 800;
   text-decoration: none;
   letter-spacing:0.02rem;
   cursor: pointer;

@@ -283,7 +283,7 @@ const HomeHeader = styled.header`
 const TextWrapper = styled.div`
   display: inline-block;
   a{
-      font-variation-settings: 'wght' 600;
+      font-variation-settings: 'wght' 800;
       &:hover{
         color: hsl(145deg 64% 70% / 100%);
       }
