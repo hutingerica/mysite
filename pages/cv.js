@@ -13,7 +13,7 @@ export default function Resume(){
       <Role>Digital Product Designer</Role>
       <SectionWrapper>
         <p>
-        User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centered design. Erica enjoys digging into core problems, figuring out design strategy, creating clean interfaces, and bringing delightful solutions to people.
+        User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centred design. Erica enjoys digging into core problems, figuring out both design and business strategy, creating prototypes, and bringing delightful solutions to people.
         </p>
       </SectionWrapper>
       <Subtitle>Work</Subtitle>
@@ -24,7 +24,7 @@ export default function Resume(){
             <Subtitle>Digital Product Designer</Subtitle>
             <p>Freelance (UK)</p>
             <p>
-              Mostly made websites and design system. Built prototypes, user experience journey maps to ensure that end-to-end digital service delivery is constantly iterating to be more user-centered. Lately, practiced <a target="_blank" href="https://space10.com/beyond-human-centered-design/">people-planet design</a> approach through projects' topic around food issues.
+              Mostly made websites and design systems. Built UI prototypes, user experience journey maps to ensure that end-to-end digital service delivery is constantly iterating to be more user-centred. Lately, I have practised a <a target="_blank" href="https://space10.com/beyond-human-centered-design/">people-planet design</a> approach through projects' topics around food, democracy, works and education.
             </p>
           </Details>
         </ListItem>
@@ -138,11 +138,12 @@ export default function Resume(){
         <TagItem>Stakeholder Engagement</TagItem>
         <TagItem>Team Workshop Facilitation</TagItem>
         <TagItem>Information Architecture</TagItem>
-        <TagItem>HTML/CSS/Javascript</TagItem>
-        <TagItem>Styled-Component</TagItem>
         <TagItem>JAMstack</TagItem>
         <TagItem>Headless CMS</TagItem>
+        <TagItem>HTML/CSS/Javascript</TagItem>
         <TagItem>(Beginner) React/Next.js</TagItem>
+        <TagItem>MDX</TagItem>
+        <TagItem>Styled-Component</TagItem>
       </TagLists>
 
       <Subtitle>Toolset</Subtitle>
