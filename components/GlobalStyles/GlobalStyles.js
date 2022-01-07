@@ -175,6 +175,7 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
+  margin-top:1.38rem;
 }
 
 small {

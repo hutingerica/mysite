@@ -6,6 +6,7 @@ import HighlightwithPic from '../components/HighlightwithPic'
 import StyledTippywithText from '../components/StyledTippywithText'
 import StyledTippy from './StyledTippy';
 import SyntaxHighlighter from './SyntaxHighlighter';
+import InsightThoughts from './InsightThoughts';
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -31,7 +32,7 @@ const MDXComponents = {
   StyledTippy,
   StyledTippywithText,
   SyntaxHighlighter,
-  
+  InsightThoughts,
 };
 export default MDXComponents;
 
