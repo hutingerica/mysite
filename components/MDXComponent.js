@@ -7,6 +7,7 @@ import StyledTippywithText from '../components/StyledTippywithText'
 import StyledTippy from './StyledTippy';
 import SyntaxHighlighter from './SyntaxHighlighter';
 import InsightThoughts from './InsightThoughts';
+import Feedbacks from './Feedbacks';
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -33,6 +34,7 @@ const MDXComponents = {
   StyledTippywithText,
   SyntaxHighlighter,
   InsightThoughts,
+  Feedbacks,
 };
 export default MDXComponents;
 

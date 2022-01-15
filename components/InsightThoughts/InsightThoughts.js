@@ -16,7 +16,7 @@ export default function InsightThoughts({number, insight, children, width, picSr
             src={`/photos/${picSrc}`}
             layout="intrinsic"
             layout="fill"
-            objectFit="cover"
+            objectFit="scale-down"
           />
         </PicWrapper>
       </ContentSection>
