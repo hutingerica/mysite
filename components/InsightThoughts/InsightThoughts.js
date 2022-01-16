@@ -10,15 +10,6 @@ export default function InsightThoughts({number, insight, children, width, picSr
         <h4>{insight}</h4>
         <h5>✍🏼 Observation</h5>
         <p>{children}</p>
-        <PicWrapper>
-          <Image
-            alt={picSrc}
-            src={`/photos/${picSrc}`}
-            layout="intrinsic"
-            layout="fill"
-            objectFit="scale-down"
-          />
-        </PicWrapper>
       </ContentSection>
     </Wrapper>
   )
@@ -30,13 +21,6 @@ const Wrapper = styled.div`
   @media(max-width:425px){
     display:block;
     width:100%;
-  }
-`
-const PicWrapper = styled.div`
-  position: relative;
-  height: 20rem;
-  @media(max-width:768px){
-    height:15rem;
   }
 `
 const ContentSection = styled.section`
