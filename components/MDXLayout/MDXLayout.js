@@ -38,11 +38,11 @@ const Read = styled.div`
  `
  const SummaryTag = styled.h6`
   background-color: hsl(145deg 64% 50% / 50%);
-  border-radius: 6px;
-  padding: .25rem .5rem .5rem;
+  border-radius: .8rem;
+  padding: .25rem .8rem 1rem;
   max-width: max-content;
-  margin: 0.5rem;
-  margin-bottom:-.5rem;
+  margin: .5rem 1rem;
+  margin-bottom:-.8rem;
   font-variation-settings: 'wght' 700;
 
  `
@@ -53,7 +53,7 @@ const Read = styled.div`
   margin: 1rem;
   align-self: center;
   margin-top:0;
-  border-radius: 6px;
+  border-radius: .8rem .8rem 0 .8rem;
  `
  const BriefContainer = styled.div`
   margin-bottom: 2rem;

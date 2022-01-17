@@ -13,7 +13,7 @@ export default function Resume(){
       <Role>Digital Product Designer</Role>
       <SectionWrapper>
         <p>
-        User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centered design. Erica enjoys digging into core problems, figuring out design strategy, creating clean interfaces, and bringing delightful solutions to people.
+        User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centred design. Erica enjoys digging into core problems, figuring out both design and business strategy, creating prototypes, and bringing delightful solutions to people.
         </p>
       </SectionWrapper>
       <Subtitle>Work</Subtitle>
@@ -24,7 +24,7 @@ export default function Resume(){
             <Subtitle>Digital Product Designer</Subtitle>
             <p>Freelance (UK)</p>
             <p>
-              Mostly made websites. Built prototypes, experience maps and design systems to ensure that end-to-end digital service delivery is constantly iterating to be more user-centered. Lately, practiced <a target="_blank" href="https://space10.com/beyond-human-centered-design/">people-planet design</a> approach through projects' topic around food, democracy, works and education.
+              Mostly made websites and design systems. Built UI prototypes, user experience journey maps to ensure that end-to-end digital service delivery is constantly iterating to be more user-centred. Lately, practised a <a target="_blank" href="https://space10.com/beyond-human-centered-design/">people-planet design</a> approach through projects' topics around food, democracy, works and education.
             </p>
           </Details>
         </ListItem>
@@ -138,11 +138,12 @@ export default function Resume(){
         <TagItem>Stakeholder Engagement</TagItem>
         <TagItem>Team Workshop Facilitation</TagItem>
         <TagItem>Information Architecture</TagItem>
-        <TagItem>HTML/CSS/Javascript</TagItem>
-        <TagItem>Styled-Component</TagItem>
         <TagItem>JAMstack</TagItem>
         <TagItem>Headless CMS</TagItem>
+        <TagItem>HTML/CSS/Javascript</TagItem>
         <TagItem>(Beginner) React/Next.js</TagItem>
+        <TagItem>MDX</TagItem>
+        <TagItem>Styled-Component</TagItem>
       </TagLists>
 
       <Subtitle>Toolset</Subtitle>
@@ -198,7 +199,7 @@ const SectionWrapper = styled.section`
   border: 1px dashed hsl(145deg 64% 70% / 50%);
   padding: 1rem;
   margin: 0 -1rem 1.38rem;
-  border-radius: 6px;
+  border-radius: .8rem .8rem 0 .8rem;
   p{
     margin: 0;
   }
@@ -258,11 +259,11 @@ const TagItem = styled.li`
   letter-spacing: 0.02rem;
   font-size: .8rem;
   font-variation-settings: 'wght' 600;
-  border-radius: 6px;
-  padding:.25rem .5rem;
-  margin: .5rem;
+  border-radius: .4rem .4rem 0;
+  padding:.25rem .75rem;
+  margin: .45rem;
   width: max-content;
-  background-color: hsl(145deg 64% 70% / 10%);
+  background-color: hsl(145deg 64% 70% / 20%);
   @media(max-width:642px){
     padding:.125rem .25rem;
     margin: .25rem;

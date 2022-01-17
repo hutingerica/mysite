@@ -18,7 +18,7 @@ export default function Home({posts}) {
         <title>Erica Huang - Designer, creator and introvert</title>
         <link rel="icon" href="favicon.ico" />
       </Head>
-        <h4>Selected Projects and Experiements</h4>
+        <h4>Selected Projects and Something Fun</h4>
         <Wrapper>
           {posts.map(({ slug, tag1, title, heroImage, subtitle }) => (
             <ListItem key={slug}>
@@ -54,7 +54,7 @@ export default function Home({posts}) {
 const Wrapper = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: normal;
   margin: 0 -1rem;
 
   @media(max-width: 799px){
@@ -64,6 +64,7 @@ const Wrapper = styled.ul`
 `
 const ItemTag = styled.small`
     opacity: 0;
+    border-radius: .4rem .4rem 0 .4rem;
     letter-spacing: 0rem;
     padding: .25rem .5rem;
     margin-right: .125rem;
@@ -80,15 +81,20 @@ const ItemLink = styled.a`
   display: block;
 `
 const ImageWrapper = styled.div`
+  display: flex;
   position: relative;
   width:100%;
+  border-radius: 0.5rem .5rem 0 .5rem;
+  overflow: hidden;
 `
 const ListItem = styled.li`
   display: block;
+  background-color: hsl(0deg 0% 55% / 10%);
+  border-radius: .8rem .8rem 0 .8rem;
+  padding: 1.5rem;
   margin: 1rem 1rem;
   width: 46%;
-  border-top: 12px solid hsl(0deg 0% 50% / 5%);
-  padding-top:.5rem;
+  border: 2px solid hsl(0deg 0% 50% / 0%);
   transition: ease-in-out .25s border;
 
   @media(max-width: 799px){
@@ -106,7 +112,7 @@ const ListItem = styled.li`
       text-decoration: none;
     }
 
-    border-color: hsl(145deg 64% 70% / 100%);
+    border-color: hsl(145deg 64% 70% / 20%);
   }
 
 `
@@ -122,13 +128,14 @@ const ItemTitle = styled.h3`
     margin: 0;
     font-variation-settings: 'wght' 600;
 `
-const ItemSubtitle = styled.h4`
+const ItemSubtitle = styled.p`
     font-variation-settings: 'wght' 400;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    light-height: 1.5;
 `
 const ItemTagWrapper = styled.div`
   position: absolute;
-  bottom:-.125rem;
+  bottom:-.5rem;
   right:-.5rem;
 `
 const Footer = styled.footer`

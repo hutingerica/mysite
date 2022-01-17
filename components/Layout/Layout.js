@@ -133,17 +133,17 @@ export default function Layout({ children, home}) {
                 <Title>Hey! I'm {meta.siteTitle}</Title>
                 <Intro>
                   <p>
-                  I am a digital product designer. I mostly make websites. Currently, I am building a knowledge sharing <StyledTippy content="👀 coming soon" placement="top"><a href="/">website</a></StyledTippy> for people to take part in confronting surplus food. My everyday treat is to turn design practices into codes after learning Josh’s <a target="_blank" href="https://courses.joshwcomeau.com">CSS for JavaScript Developers</a> course. On the side, I help develop an e-commerce website for my friend’s co-op cafe since COVID pandemic hit last year.
+                  I am a digital product designer. I mostly make websites. Currently, I am building a <StyledTippy content="See more 👀 " placement="top"><a href="/project/06-pdis-design-system">design system</a></StyledTippy> for Taiwanese government to bring an accessible, mobile-friendly website-production process. My everyday treat is to turn design practices into codes after learning Josh’s <a target="_blank" href="https://courses.joshwcomeau.com">CSS for JavaScript Developers</a> course. On the side, I helped develop an e-commerce website for my friend’s co-op cafe since COVID pandemic hit.
                   </p>
                   <p>
-                  When I'm not digging into Figma or Visual Studio Code, you’ll find me exploring a bookstore or local farmer's market, walking, or foraging. As of late, I teamed up with my partner and created <StyledTippy content="👀 coming soon" placement="top"><a href="/">1522 Collective</a></StyledTippy> to practice people-planet approach through projects around food, democracy, works and education.
+                  When I'm not digging into Figma or Visual Studio Code, you’ll find me exploring a bookstore or local farmer's market, cycling, walking, or foraging. As of late, I teamed up with my partner and created <StyledTippy content="coming soon 👀" placement="top"><a href="/">1522 Collective</a></StyledTippy> to practice people-planet approaches through some experimental projects around <StyledTippy content="See project &Beyond Flavour 👀" placement="top"><a href="/project/04-and-beyond-flavour">food</a></StyledTippy>, democracy, works and education.
                   </p>
                 </Intro>
                 <Links>
                   <a target="_blank" href="https://www.linkedin.com/in/ericahuangdesign/">LinkedIn</a>
                   <a href="mailto:hutingstudio@gmail.com">Email</a>
                   <a target="_blank" href= "https://github.com/hutingerica">github</a>
-                  <a target="_blank" href="https://unsplash.com/@ericaypp">Unsplash</a>
+                  {/* <a target="_blank" href="https://unsplash.com/@ericaypp">Unsplash</a> */}
                 </Links>
               </TextWrapper>
           </HomeWrapper>
@@ -283,7 +283,7 @@ const HomeHeader = styled.header`
 const TextWrapper = styled.div`
   display: inline-block;
   a{
-      font-variation-settings: 'wght' 600;
+      font-variation-settings: 'wght' 800;
       &:hover{
         color: hsl(145deg 64% 70% / 100%);
       }
@@ -365,7 +365,7 @@ const BackhomeWrapper = styled.div`
 const ThemeButton = styled.button`
   padding: .5rem;
   margin-left: 1rem;
-  border-radius: 10px;
+  border-radius: .6rem .6rem 0;
   &:hover{
     cursor: pointer;
   }

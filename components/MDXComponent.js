@@ -4,6 +4,10 @@ import VideoPlayer from '../components/VideoPlayer'
 import Highlight from '../components/Highlight'
 import HighlightwithPic from '../components/HighlightwithPic'
 import StyledTippywithText from '../components/StyledTippywithText'
+import StyledTippy from './StyledTippy';
+import SyntaxHighlighter from './SyntaxHighlighter';
+import InsightThoughts from './InsightThoughts';
+import Feedbacks from './Feedbacks';
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -26,8 +30,11 @@ const MDXComponents = {
   VideoPlayer,
   Highlight,
   HighlightwithPic,
-  StyledTippywithText
-
+  StyledTippy,
+  StyledTippywithText,
+  SyntaxHighlighter,
+  InsightThoughts,
+  Feedbacks,
 };
 export default MDXComponents;
 
