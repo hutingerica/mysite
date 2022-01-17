@@ -143,7 +143,7 @@ export default function Layout({ children, home}) {
                   <a target="_blank" href="https://www.linkedin.com/in/ericahuangdesign/">LinkedIn</a>
                   <a href="mailto:hutingstudio@gmail.com">Email</a>
                   <a target="_blank" href= "https://github.com/hutingerica">github</a>
-                  <a target="_blank" href="https://unsplash.com/@ericaypp">Unsplash</a>
+                  {/* <a target="_blank" href="https://unsplash.com/@ericaypp">Unsplash</a> */}
                 </Links>
               </TextWrapper>
           </HomeWrapper>
