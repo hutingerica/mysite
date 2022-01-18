@@ -133,6 +133,7 @@ export default function Resume(){
         <TagItem>User Research</TagItem>
         <TagItem>Rapid Prototype</TagItem>
         <TagItem>UX and UI Design</TagItem>
+        <TagItem>Design System</TagItem>
         <TagItem>Journey Mapping</TagItem>
         <TagItem>Service Blueprinting</TagItem>
         <TagItem>Stakeholder Engagement</TagItem>
@@ -152,6 +153,7 @@ export default function Resume(){
         <TagItem>Adobe Creative Suite</TagItem>
         <TagItem>Affinity Suite</TagItem>
         <TagItem>GitHub</TagItem>
+        <TagItem>Zeroheight</TagItem>
         <TagItem>Slack</TagItem>
         <TagItem>Miro</TagItem>
         <TagItem>Trello</TagItem>
