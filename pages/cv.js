@@ -24,7 +24,7 @@ export default function Resume(){
             <Subtitle>Digital Product Designer</Subtitle>
             <p>Freelance (UK)</p>
             <p>
-              Mostly made websites and the design system of Taiwanese government. Built UI prototypes, user experience journey maps to ensure that end-to-end digital service delivery is constantly iterating to be more user-centred.
+            Mostly made websites. Recently, worked remotely to build and manage a design system for Taiwanese government from scratch. With works in solid design and engineering, the design system aims to bring an iterative and progressive guideline that helps agencies to easily build accessible, mobile-friendly government websites. Built UI prototypes, user experience journey maps and tested with engineers to ensure that design system elements are constantly iterating to be more user-centred for citizens and adaptable for developers.
             </p>
           </Details>
         </ListItem>
