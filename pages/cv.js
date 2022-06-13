@@ -13,7 +13,7 @@ export default function Resume(){
       <Role>Digital Product Designer</Role>
       <SectionWrapper>
         <p>
-        User research and service design specialist with experience delivering end-to-end services, facilitating team workshops and championing human-centred design. Erica enjoys digging into core problems, figuring out both design and business strategy, creating prototypes, and bringing delightful solutions to people.
+        She is a service design specialist with recent experience as a design system product designer delivering a minimum viable product in the public sector. Previously as a service designer in projects from both public sectors and business industries, enjoying working alongside products and production processes, she was experienced in driving strategies through the interplay of communication and design.
         </p>
       </SectionWrapper>
       <Subtitle>Work</Subtitle>
@@ -22,50 +22,73 @@ export default function Resume(){
           <Date>Jan 2020 - Present</Date>
           <Details>
             <Subtitle>Digital Product Designer</Subtitle>
-            <p>Freelance (UK)</p>
-            <p>
-            Mostly made websites. Recently, worked remotely to build and manage a design system for Taiwanese government from scratch. With works in solid design and engineering, the design system aims to bring an iterative and progressive guideline that helps agencies to easily build accessible, mobile-friendly government websites. Built UI prototypes, user experience journey maps and tested with engineers to ensure that design system elements are constantly iterating to be more user-centred for citizens and adaptable for developers.
-            </p>
+            <p>Freelance(UK/Taiwan)</p>
+            <Subtitle>Featured Work: Design System in Taiwanese Government</Subtitle>
+            <AchievementWrapper>
+              <AchievementList>
+              Launched a minimum viable design system with 12 design components and 6 patterns, which have planned to implement into more than 10 Taiwanese governmental digital services later this year.
+              </AchievementList>
+              <AchievementList>
+              Developed de-branded colour system with open-sourced Google material design colour tools, provided governmental stakeholders customisation of colours while following level AA Web Content Accessibility Guidelines (WCAG).
+              </AchievementList>
+              <AchievementList>
+              Worked remotely in a team with engineers, product managers and designers to distill design components into easily adaptable elements based on Bootstrap 5.0, a web production platform used by mostly 80% existing production of governmental digital services in Taiwan.
+              </AchievementList>
+              <AchievementList>
+              Articulated design decisions with accessibility content writer and engineers to provide stakeholders hand-on documentation of accessibility and production guideline via Zeroheight platform.
+              </AchievementList>
+            </AchievementWrapper>
           </Details>
         </ListItem>
         <ListItem>
           <Date>Dec 2018 - Dec 2019</Date>
           <Details>
             <Subtitle>Service Designer</Subtitle>
-            <p>King's Cross Bun (UK)</p>
+            <p>King's Cross Bun | Coventry University (UK)</p>
             <p>
-              Developed co-working toolkits with project organiser to help team members in King’s Cross Bun brainstorm and make decisions on long-term project strategies. The goal is to connect producers, customers, academics, and our planet with food, and the result of design are toolkits including stakeholders analysis, project journey maps, project blueprints and etc.
-            </p>
+            Developed internal communication toolkits with account manager, helped multidisciplinary team (with food producers and academics) brainstorm and organise strategies of sustainable food system.
+            </p>  
           </Details>
         </ListItem>
         <ListItem>
           <Date>Sep 2016 - Sep 2018</Date>
           <Details>
-            <Subtitle>Student Service Designer </Subtitle>
+            <Subtitle>Student Service Designer at Royal College of Art</Subtitle>
             <p>Na-Ba Primary School (Taiwan), CERN (Switzerland), PepsiCo (UK), Islington Council (UK), NASA (US)</p>
             <p>
-              As a student service designer at Royal College of Art, worked in agile at scale to manage projects with clients from both industry and public sector. Built prototypes, developed experience maps, and conducted user research to ensure that the result is constantly iterating to be more user-centered whilst responding to clients' needs.
+            Worked in agile at scale to manage projects with clients from both industry and public sector. Built prototypes, designed experience, and conducted user research to ensure that the result is constantly iterating to be more user-centred whilst responding to clients' needs.
             </p>
           </Details>
         </ListItem>
         <ListItem>
           <Date>Sep 2015 - Sep 2016</Date>
           <Details>
-            <Subtitle>Science Teacher / Designer</Subtitle>
+            <Subtitle>Science Teacher and Beyond</Subtitle>
             <p>Na-Ba Primary School (Taiwan) </p>
-            <p>
-              Delivered science lessons to pupils. Built a new learning process that merges with design thinking elements. Helped pupils practice user research, develop user journeys and built <a target="_blank" href="https://www.youtube.com/watch?v=Scf1AIf8I6Q">prototypes</a> that won the finalist in the 4th Sony Creative Science Award competing over 200 pupil teams.
-            </p>
+            <AchievementWrapper>
+              <AchievementList>
+              Delivered science lessons to pupils, built a new learning process that merges with design research elements for 4 grades pupils, received 100% satisfaction feedback from both pupils and parents.
+              </AchievementList>
+              <AchievementList>
+              Guided pupils to practising user research, developing user journeys, and building <a target="_blank" href="https://www.youtube.com/watch?v=Scf1AIf8I6Q">prototypes</a> that won the finalist in the 4th Sony Creative Science Award competing over 200 pupil teams in Taiwan.
+              </AchievementList>
+            </AchievementWrapper>
           </Details>
         </ListItem>
+        
         <ListItem>
           <Date>Apr 2014 - Apr 2015</Date>
           <Details>
             <Subtitle>User Researcher</Subtitle>
             <p>Microprogram (Taiwan) </p>
-            <p>
-              Conducted user research for the accessible and inclusive design of a public bike self-rental service. The findings were used in future iterations of screen design on the bike. Facilitated internal co-creation workshops for prototyping new screen touchpoints and creating journey maps within data ecosystems.
-            </p>
+            <AchievementWrapper>
+              <AchievementList>
+              Conducted user research, visualised data ecosystem with hardware developers, prototyped new version of screen designs and data flows which have reduced 20% of future hardware internal costs.
+              </AchievementList>
+              <AchievementList>
+              Facilitated internal service design workshops with colleagues from marketing and engineering team, developed user-centred workable solution of a feature - Finding bikes near me of Youbike.
+              </AchievementList>
+            </AchievementWrapper>
           </Details>
         </ListItem>
       </ul>
@@ -90,6 +113,13 @@ export default function Resume(){
       <Subtitle>Qualifications</Subtitle>
       <ul>
       <ListItem>
+          <Date>Dec 2021</Date>
+          <Details>
+            <Subtitle>CSS for JavaScript Developers</Subtitle>
+            <p>Josh Comeau</p>
+          </Details>
+        </ListItem>
+      <ListItem>
           <Date>April 2021</Date>
           <Details>
             <Subtitle>Figma for UI/UX Design</Subtitle>
@@ -112,7 +142,7 @@ export default function Resume(){
             <Subtitle>Event Assistant</Subtitle>
             <p>We Make The City (Netherland)</p>
             <p>
-              Helped design foot traffic and front desk registration for audiences participating in We Make The City which is one of the largest city festivals in Europe, taking place from 17 to 23 June 2019, celebrating urban living whilst addressing important urban issues in the metropolitan region of Amsterdam.
+            Designed foot traffic and front desk registration journey for audiences taking part in We Make The City which is one of the largest city festivals in Europe, taking place from 17 to 23 June 2019 in the metropolitan region of Amsterdam.
             </p>
           </Details>
         </ListItem>
@@ -122,7 +152,7 @@ export default function Resume(){
             <Subtitle>Head of Design / Event Manager</Subtitle>
             <p>TEDxNTHU (Taiwan)</p>
             <p>
-              Designed curation experience for the first annual event in 2013, with more than 300 audiences participating. Managed event day logistics and developed a script and timeline for the event day that is given to the team to ensure that curation is constantly delivering whilst resolving unexpected problems as soon as possible.
+            Designed curation experience of the first annual event in 2013, with over 300 audiences taking part. Managed event day logistics and managed working group to ensure that curation is constantly delivering whilst resolving unexpected problems as soon as possible.
             </p>
           </Details>
         </ListItem>
@@ -164,7 +194,13 @@ export default function Resume(){
     </Layout>
   )
 }
-
+const AchievementWrapper = styled.ul`
+  margin-left: 1.2rem;
+  list-style: disc;
+  padding-bottom: 1rem;
+`
+const AchievementList = styled.li`
+`
 const Title = styled.h4`
   font-variation-settings: 'wght' 400;
   margin: 3rem 0 .69rem;
